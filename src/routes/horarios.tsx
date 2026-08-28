@@ -474,12 +474,7 @@ function Horarios() {
                           desc: "Débito o crédito",
                           icon: CreditCard,
                         },
-                        {
-                          id: "efectivo",
-                          label: "En efectivo",
-                          desc: "Paga en caja al llegar",
-                          icon: Banknote,
-                        },
+                       
                       ] as const
                     ).map((m) => (
                       <button
@@ -508,12 +503,7 @@ function Horarios() {
                       </button>
                     ))}
                   </div>
-                  {metodo === "efectivo" && (
-                    <p className="mt-3 rounded-xl bg-warning/25 p-4 text-base font-semibold text-warning-foreground">
-                      Recuerde: tiene 15 minutos de tolerancia. Después de ese tiempo el cupo se
-                      libera.
-                    </p>
-                  )}
+                  
                   {metodo === "yape" && (
                     <div className="mt-4 grid gap-4 rounded-xl border-2 border-border p-4 sm:grid-cols-2">
                       <p className="flex items-center gap-2 text-sm font-bold text-muted-foreground sm:col-span-2">
