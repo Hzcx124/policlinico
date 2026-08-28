@@ -411,21 +411,21 @@ const medicosBase: Medico[] = [
     nombre: "Dr. M. Gozar",
     especialidadId: "e-mgen",
     cmp: "Medicina General",
-    agenda: { 2: ["16:00"], 3: ["16:00"] },
+    agenda: { 2: ["14:00", "16:00"], 3: ["14:00", "16:00"] },
   },
   {
     id: "m-arodriguez",
     nombre: "Dra. Amada Rodríguez",
     especialidadId: "e-mgen",
     cmp: "Medicina General",
-    agenda: { 1: ["10:00"], 3: ["10:00"], 5: ["10:00"], 6: ["10:00"] },
+    agenda: { 1: ["10:00", "15:00"], 3: ["10:00", "15:00"], 5: ["10:00", "15:00"], 6: ["10:00", "15:00"] },
   },
   {
     id: "m-cabrera-mg",
     nombre: "Dr. Cabrera",
     especialidadId: "e-mgen",
     cmp: "Medicina General",
-    agenda: { 1: ["08:30"], 2: ["08:30"], 3: ["08:30"], 4: ["08:30"], 5: ["08:30"], 6: ["08:30"] },
+    agenda: { 1: ["08:30", "14:00"], 2: ["08:30", "14:00"], 3: ["08:30", "14:00"], 4: ["08:30", "14:00"], 5: ["08:30", "14:00"], 6: ["08:30", "14:00"] },
   },
   {
     id: "m-bendezu",
@@ -446,7 +446,7 @@ const medicosBase: Medico[] = [
     nombre: "Dra. Huamán",
     especialidadId: "e-mgen",
     cmp: "Medicina General",
-    agenda: { 2: ["08:30"], 3: ["08:30"], 4: ["08:30"] },
+    agenda: { 2: ["08:30", "14:00"], 3: ["08:30", "14:00"], 4: ["08:30", "14:00"] },
   },
   {
     id: "m-quiri",
@@ -460,14 +460,14 @@ const medicosBase: Medico[] = [
     nombre: "Dr. Marlon García",
     especialidadId: "e-mgen",
     cmp: "Medicina General",
-    agenda: { 1: ["08:30", "14:00"], 5: ["08:30"], 6: ["14:30"] },
+    agenda: { 1: ["08:30", "14:00"], 5: ["08:30", "14:00"], 6: ["14:30", "14:00"] },
   },
   {
     id: "m-jgarcia",
     nombre: "Dr. Jean Piere García",
     especialidadId: "e-mgen",
     cmp: "Medicina General",
-    agenda: { 1: ["08:30"], 2: ["08:30"], 4: ["08:30"], 5: ["08:30"], 6: ["08:30"] },
+    agenda: { 1: ["08:30", "14:00"], 2: ["08:30", "14:00"], 4: ["08:30", "14:00"], 5: ["08:30", "14:00"], 6: ["08:30", "14:00"] },
   },
 
   // Pediatría
@@ -486,9 +486,9 @@ const medicosBase: Medico[] = [
     agenda: {
       1: ["09:00", "14:30"],
       2: ["09:00", "14:30"],
-      3: ["14:30"],
+      3: ["14:30", "15:00"],
       4: ["09:00", "14:30"],
-      5: ["14:30"],
+      5: ["14:30", "15:00"],
       6: ["09:00", "14:30"],
     },
   },
@@ -497,14 +497,14 @@ const medicosBase: Medico[] = [
     nombre: "Dra. Cabrera",
     especialidadId: "e-ped",
     cmp: "Pediatría",
-    agenda: { 2: ["16:00"], 4: ["16:00"], 6: ["09:00"] },
+    agenda: { 2: ["14:00", "16:00"], 4: ["14:00", "16:00"], 6: ["09:00", "14:00"] },
   },
   {
     id: "m-diaz",
     nombre: "Dra. Díaz",
     especialidadId: "e-ped",
     cmp: "Pediatría",
-    agenda: { 2: ["08:30"], 4: ["08:30"], 6: ["08:30"] },
+    agenda: { 2: ["08:30", "14:00"], 4: ["08:30", "14:00"], 6: ["08:30", "14:00"] },
   },
 
   // Medicina Interna
@@ -543,14 +543,14 @@ const medicosBase: Medico[] = [
     nombre: "Lic. M. Palacin",
     especialidadId: "e-obs",
     cmp: "Obstetricia",
-    agenda: { 2: ["09:00"], 3: ["15:00"], 4: ["15:00"], 6: ["15:00"] },
+    agenda: { 2: ["09:00", "14:00"], 3: ["12:00", "14:00"], 4: ["12:00", "14:00"], 6: ["12:00", "14:00"] },
   },
   {
     id: "m-osorio",
     nombre: "Lic. M. Osorio",
     especialidadId: "e-obs",
     cmp: "Obstetricia",
-    agenda: { 1: ["08:30", "14:30"], 2: ["14:30"] },
+    agenda: { 1: ["08:30", "14:30"], 2: ["08:30", "14:00"] },
   },
 
   // CRED
@@ -573,7 +573,7 @@ const medicosBase: Medico[] = [
     nombre: "Grupo 13 a 15 meses",
     especialidadId: "e-estim",
     cmp: "Estimulación Temprana",
-    agenda: { 2: ["15:00"] },
+    agenda: { 2: ["14:00", "15:00"] },
     nota: "Martes 3:00 pm – 4:00 pm",
   },
   {
@@ -581,7 +581,7 @@ const medicosBase: Medico[] = [
     nombre: "Grupo 16 a 18 meses",
     especialidadId: "e-estim",
     cmp: "Estimulación Temprana",
-    agenda: { 2: ["16:15"] },
+    agenda: { 2: ["16:15", "17:15"] },
     nota: "Martes 4:15 pm – 5:15 pm",
   },
   {
@@ -589,7 +589,7 @@ const medicosBase: Medico[] = [
     nombre: "Grupo 1 a 6 meses",
     especialidadId: "e-estim",
     cmp: "Estimulación Temprana",
-    agenda: { 4: ["15:00"], 6: ["10:00"] },
+    agenda: { 4: ["14:00", "15:00"], 6: ["10:00", "11:00"] },
     nota: "Jueves 3:00 pm – 4:00 pm · Sábado 10:00 am – 11:00 am",
   },
   {
@@ -597,7 +597,7 @@ const medicosBase: Medico[] = [
     nombre: "Grupo 7 a 12 meses",
     especialidadId: "e-estim",
     cmp: "Estimulación Temprana",
-    agenda: { 4: ["16:15"], 6: ["11:15"] },
+    agenda: { 4: ["16:15", "17:15"], 6: ["11:15", "12:15"] },
     nota: "Jueves 4:15 pm – 5:15 pm · Sábado 11:15 am – 12:15 md",
   },
 
@@ -629,21 +629,21 @@ const medicosBase: Medico[] = [
     nombre: "Lic. Bendaño",
     especialidadId: "e-psi",
     cmp: "Psicología",
-    agenda: { 1: ["08:30", "14:00"], 2: ["08:30", "14:00"], 3: ["08:30"], 4: ["14:00"], 5: ["08:30"] },
+    agenda: { 1: ["08:30", "14:00"], 2: ["08:30", "14:00"], 3: ["08:30", "14:00"], 5: ["08:30", "14:00"] },
   },
   {
     id: "m-gamarra",
     nombre: "Lic. Gamarra",
     especialidadId: "e-psi",
     cmp: "Psicología",
-    agenda: { 1: ["08:30", "14:00"], 3: ["08:30","14:00"], 4: ["08:30","09:00"], 5: ["08:30","14:00"], 6: ["09:00", "14:00"] },
+    agenda: { 1: ["08:30", "14:00"], 3: ["08:30","14:00"], 5: ["08:30","14:00"], 6: ["09:00", "14:00"] },
   },
   {
     id: "m-tafur",
     nombre: "Lic. Tafur",
     especialidadId: "e-psi",
     cmp: "Psicología",
-    agenda: { 1: ["08:30", "14:00"], 3: ["14:00"], 5: ["14:00"] },
+    agenda: { 1: ["08:30", "14:00"], 3: ["14:00", "15:00"], 5: ["14:00", "15:00"] },
   },
   {
     id: "m-flores",
@@ -657,7 +657,7 @@ const medicosBase: Medico[] = [
     nombre: "Lic. Rengifo",
     especialidadId: "e-psi",
     cmp: "Psicología",
-    agenda: { 1: ["09:30", "14:30"], 3: ["09:30", "14:30"], 5: ["09:30", "14:30"], 6: ["09:30"] },
+    agenda: { 1: ["09:30", "14:30"], 3: ["09:30", "14:30"], 5: ["09:30", "14:30"], 6: ["09:30", "14:30"] },
   },
 
   // Psiquiatría
@@ -666,7 +666,7 @@ const medicosBase: Medico[] = [
     nombre: "Dr. Naveda",
     especialidadId: "e-psiq",
     cmp: "Psiquiatría",
-    agenda: { 2: ["15:00"], 5: ["15:00"] },
+    agenda: { 2: ["13:30","15:00"], 5: ["13:30","15:00"] },
     nota: "Con orden médica",
   },
 
@@ -676,7 +676,7 @@ const medicosBase: Medico[] = [
     nombre: "Lic. S. Lucich",
     especialidadId: "e-nut",
     cmp: "Nutrición",
-    agenda: { 1: ["08:00"], 2: ["08:00"], 3: ["08:00"], 4: ["08:00"], 5: ["08:00"], 6: ["08:00"] },
+    agenda: { 1: ["08:00", "14:00"], 2: ["08:00", "14:00"], 3: ["08:00", "14:00"], 4: ["08:00", "14:00"], 5: ["08:00", "14:00"], 6: ["08:00", "14:00"] },
   },
 
   // Cardiología / Cirugía Cardiovascular
@@ -685,14 +685,14 @@ const medicosBase: Medico[] = [
     nombre: "Dr. J. Pintado",
     especialidadId: "e-card",
     cmp: "Cardiología",
-    agenda: { 1: ["08:00"], 2: ["08:00"], 3: ["08:00"], 5: ["08:00"], 6: ["08:00"] },
+    agenda: { 1: ["08:00", "14:00"], 2: ["08:00", "14:00"], 3: ["08:00", "14:00"], 5: ["08:00", "14:00"], 6: ["08:00", "14s:00"] },
   },
   {
     id: "m-llerena-cv",
     nombre: "Dr. Llerena",
     especialidadId: "e-cardv",
     cmp: "Cirugía Cardiovascular",
-    agenda: { 4: ["16:30"] },
+    agenda: { 4: ["14:00","16:30"] },
   },
 
   // Cirugía
@@ -701,21 +701,21 @@ const medicosBase: Medico[] = [
     nombre: "Dr. Delgado",
     especialidadId: "e-cir",
     cmp: "Cirugía",
-    agenda: { 3: ["09:00"], 4: ["09:00"] },
+    agenda: { 3: ["09:00", "11:00"], 4: ["09:00", "11:00"] },
   },
   {
     id: "m-vasquez",
     nombre: "Dr. Vásquez",
     especialidadId: "e-cir",
     cmp: "Cirugía",
-    agenda: { 5: ["09:00"] },
+    agenda: { 5: ["09:00", "11:00"] },
   },
   {
     id: "m-alosilla",
     nombre: "Dr. Alosilla",
     especialidadId: "e-cir",
     cmp: "Cirugía",
-    agenda: { 2: ["09:00"], 6: ["09:00"] },
+    agenda: { 2: ["09:00", "11:00"], 6: ["09:00", "11:00"] },
   },
 
   // Traumatología
@@ -724,7 +724,7 @@ const medicosBase: Medico[] = [
     nombre: "Dr. W. Matta",
     especialidadId: "e-trau",
     cmp: "Traumatología",
-    agenda: { 1: ["08:00"], 4: ["11:00"], 5: ["08:00"], 6: ["08:00"] },
+    agenda: { 1: ["08:00", "14:00"], 4: ["11:00", "14:00"], 5: ["08:00", "14:00"], 6: ["08:00", "14:00"] },
   },
   {
     id: "m-duenas",
@@ -740,7 +740,7 @@ const medicosBase: Medico[] = [
     nombre: "Dr. Málaga",
     especialidadId: "e-neuro",
     cmp: "Neurología",
-    agenda: { 2: ["14:30"], 4: ["14:30"] },
+    agenda: { 2: ["14:30", "15:30"], 4: ["14:30", "15:30"] },
   },
 
   // Gastroenterología
@@ -749,7 +749,7 @@ const medicosBase: Medico[] = [
     nombre: "Dra. V. Rodríguez",
     especialidadId: "e-gastro",
     cmp: "Gastroenterología",
-    agenda: { 2: ["16:30"], 3: ["09:00", "16:00"], 4: ["09:00", "16:00"] },
+    agenda: { 2: ["16:00", "17:30"], 3: ["09:00", "16:00"], 4: ["09:00", "16:00"] },
   },
 
   // Urología
@@ -758,14 +758,14 @@ const medicosBase: Medico[] = [
     nombre: "Dr. R. Llana",
     especialidadId: "e-uro",
     cmp: "Urología",
-    agenda: { 1: ["15:30"], 3: ["08:00"], 5: ["08:00"] },
+    agenda: { 1: ["15:30", "16:30"], 3: ["08:00", "09:00"], 5: ["08:00", "09:00"] },
   },
   {
     id: "m-lazo",
     nombre: "Dr. Lazo",
     especialidadId: "e-uro",
     cmp: "Urología",
-    agenda: { 4: ["17:00"] },
+    agenda: { 4: ["17:00", "18:00"] },
   },
 
   // Neumología
@@ -774,7 +774,7 @@ const medicosBase: Medico[] = [
     nombre: "Dr. Yabar",
     especialidadId: "e-neum",
     cmp: "Neumología",
-    agenda: { 1: ["15:30"], 2: ["15:30"], 3: ["15:30"], 4: ["15:30"], 5: ["15:30"], 6: ["08:00"] },
+    agenda: { 1: ["15:30", "16:30"], 2: ["15:30", "16:30"], 3: ["15:30", "16:30"], 4: ["15:30", "16:30"], 5: ["15:30", "16:30"], 6: ["08:00", "09:00"] },
   },
 
   // Reumatología
@@ -783,7 +783,7 @@ const medicosBase: Medico[] = [
     nombre: "Dr. Camargo",
     especialidadId: "e-reum",
     cmp: "Reumatología",
-    agenda: { 1: ["15:30"], 3: ["15:30"], 5: ["15:30"], 6: ["13:30"] },
+    agenda: { 1: ["15:30", "16:30"], 3: ["15:30", "16:30"], 5: ["15:30", "16:30"], 6: ["13:30", "14:30"] },
   },
 
   // Dermatología
@@ -820,7 +820,7 @@ const medicosBase: Medico[] = [
     nombre: "Dr. M. Vega",
     especialidadId: "e-otorr",
     cmp: "Otorrinolaringología",
-    agenda: { 4: ["08:00", "14:30"], 5: ["14:30"] },
+    agenda: { 4: ["08:00", "14:30"], 5: ["14:30", "15:30"] },
   },
 
   // Medicina Física
@@ -839,7 +839,7 @@ const medicosBase: Medico[] = [
     nombre: "CD. Barzola",
     especialidadId: "e-dniños",
     cmp: "Odontopediatría",
-    agenda: { 3: ["09:00", "15:00"], 4: ["09:00", "15:00"], 5: ["09:00", "15:00"], 6: ["09:00"] },
+    agenda: { 3: ["09:00", "15:00"], 4: ["09:00", "15:00"], 5: ["09:00", "15:00"], 6: ["09:00", "15:00"] },
     nota: "Miércoles a viernes ambos turnos · sábado turno mañana",
   },
   {
@@ -847,7 +847,7 @@ const medicosBase: Medico[] = [
     nombre: "CD. Aguilar",
     especialidadId: "e-dniños",
     cmp: "Odontopediatría",
-    agenda: { 1: ["13:30"], 3: ["13:30"], 5: ["13:30"], 6: ["08:30"] },
+    agenda: { 1: ["13:30", "14:30"], 3: ["13:30", "14:30"], 5: ["13:30", "14:30"], 6: ["08:30", "09:30"] },
   },
 
   // Dental Adultos
@@ -903,7 +903,7 @@ const medicosBase: Medico[] = [
       2: ["08:00", "17:00"],
       3: ["08:00", "17:00"],
       4: ["08:00", "17:00"],
-      5: ["08:00", "10:00", "15:00", "17:00"],
+      5: ["08:00", "17:00"],
       6: ["08:00", "10:00"],
     },
   },
